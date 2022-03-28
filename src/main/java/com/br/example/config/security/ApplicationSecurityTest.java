@@ -7,7 +7,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 
 @Profile("test")
 @Configuration
-public class ApplicationSecurity extends WebSecurityConfigurerAdapter {
+public class ApplicationSecurityTest extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(WebSecurity web) throws Exception {
         web.ignoring().antMatchers("/**");
